@@ -1,10 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.24;
+
+error FAILED_TO_LEND();
 
 contract LendContract {
-    error FAILED_TO_LEND();
+    
 
-    // address zer = 0x0000000000000000000000000000000000000000
+    // address zero = 0x0000000000000000000000000000000000000000
 
     mapping(address => uint256) loans;
 
